@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+  <!-- Header Start -->
+  <Header>
+    <!-- First Navigation Bar -->
     <nav class="contianer navbar navbar-expand-sm navbar navbar-dark bg-dark">
-        <!-- Container wrapper -->
         <div class="container">
-          <!-- Toggle button -->
           <button
             data-mdb-collapse-init
             class="navbar-toggler"
@@ -23,85 +24,76 @@
             <i class="fas fa-bars"></i>
           </button>
       
-          <!-- Collapsible wrapper -->
+          <!-- Logo -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Navbar brand -->
             <a class="navbar-brand mt-2 mt-sm-0" href="#">
               <label class="fw-bold">ShareMates</label>
             </a>
       
-            <!-- Left links -->
           </div>
-          <!-- Collapsible wrapper -->
       
-          <!-- Right elements -->
+          <!-- Page Link -->
           <div class="d-flex align-items-center">
-      
-            <!-- Login/Signup -->
             <div class="container-fluid">
               <ul class="navbar-nav me-auto ">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="/login.html">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Signup</a>
+                  <a class="nav-link" href="/register.html">Signup</a>
                 </li>
               </ul>
             </div>
-            <!-- Avatar -->
+
+            <!-- Account Btn -->
             <div class="container-fluid">
               <a>
                 <img
-                  src="https://beforeigosolutions.com/wp-content/uploads/2021/12/dummy-profile-pic-300x300-1.png"
+                  src="            "
                   class="rounded-circle"
                   height="30"
-                  alt="Black and White Portrait of a Man"
+                  alt="The Account Img"
                   loading="lazy"
                 />
               </a>
             </div>
           </div>
-          <!-- Right elements -->
         </div>
-        <!-- Container wrapper -->
       </nav>
-      <!-- Navbar -->
       
-      <!-- Second Navbar -->
+      <!-- Second Navigation Bar -->
       <nav class="contianer navbar navbar-expand-sm navbar navbar-dark" style="background-color:#2b3036">
-        <!-- Container wrapper -->
         <div class="container-fluid">
-          <!-- Collapsible wrapper -->
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <!-- Left links -->
             <ul class="navbar-nav mc-auto mb-2 mb-sm-0 ">
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">Home</a>
+                <a class="nav-link px-4" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">Mates</a>
+                <a class="nav-link px-4" href="/Mates.html">Mates</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">Rooms</a>
+                <a class="nav-link px-4" href="/rooms.html">Rooms</a>
               </li>
             </ul>
-            <!-- Left links -->
           </div>
       
-          </div>
-          <!-- Right elements -->
         </div>
-        <!-- Container wrapper -->
+        </div>
       </nav>
-      <!-- Navbar -->
     </nav>
-    
+  </Header>
+  <!-- Header End -->
+
+  <!-- Main Register Page -->
     <section class="h-100">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col">
               <div class="card card-registration my-4">
                 <div class="row g-0">
+
+                  <!-- Left Sidebar -->
                   <div class="col-xl-3 d-none d-xl-block" style="background-color:#d3d3d3";>
                     <div class="row">
                         <div class="card-body p-md-5 text-black">
@@ -122,10 +114,23 @@
                         
                     </div>
                   </div>
+
+                  <!-- Personal Information -->
                   <div class="col-xl-6">
                     <div class="card-body p-md-5 text-black">
                       <h3 class="mb-5 text-uppercase">Personal Information Form</h3>
+
+                      <!-- Photo -->
+                      <div class="row">
+                        <div class="col-md-6 md-4">
+                          <div class="form-outline">
+                            <img src="<!-- Second Navigation Bar -->" class="rounded img-thumbnail" height="100px" width="100px">
+                            <button type="submit" value="Change Photo"></button>
+                          </div>
+                        </div>
+                      </div>
                     
+                      <!-- User Name -->
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
@@ -133,7 +138,9 @@
                             <label class="form-label" for="form3Example1m">User Name</label>
                           </div>
                         </div>
+                      </div>
 
+                      <!-- Name -->
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
@@ -149,6 +156,7 @@
                         </div>
                       </div>
       
+                      <!-- Email -->
                       <div class="row">
                         <div class="col-md-12 mb-4">
                           <div class="form-outline">
@@ -159,11 +167,13 @@
                        
                       </div>
       
+                      <!-- Budget -->
                       <div class="col-md-6 mb-4">
                         <input type="number" id="form3Example90" class="form-control form-control-lg" />
                         <label class="form-label" for="form3Example90">Budget</label>
                       </div>
 
+                      <!-- Age -->
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
@@ -171,12 +181,11 @@
                             <label class="form-label" for="form3Example1m">Age</label>
                           </div>
                         </div>
-                        </div>
+                      </div>
 
+                      <!-- Gender -->
                       <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-      
                         <h6 class="mb-0 me-4">Gender: </h6>
-
                         <div class="form-check form-check-inline mb-0 me-4">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
                               value="option1" />
@@ -188,7 +197,6 @@
                             value="option2" />
                           <label class="form-check-label" for="femaleGender">Female</label>
                         </div>
-      
                         <div class="form-check form-check-inline mb-0">
                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
                             value="option3" />
@@ -197,6 +205,7 @@
       
                       </div>
                     
+                      <!-- Nationality -->
                       <div class="row">
                           <div class="col-md-6 mb-4">
                             <select class="form-select">
@@ -207,21 +216,14 @@
                           </div>
                       </div>
 
+                      <!-- Pass -->
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <select class="form-select">
-                            <option value="1">Type of Visa</option>
-                            <option value="2">Singaporean</option>
-                            <option value="3">International Student</option>
-                            <option value="4">Travel</option>
-                            <option value="5">ETC</option>
+                            <option value="1">Type of Pass</option>
                           </select>
-      
                         </div>
-
                       </div>
-      
-
       
                       <div class="d-flex justify-content-end pt-3">
                         <button type="button" class="btn btn-light btn-lg">Reset all</button>
